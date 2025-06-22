@@ -123,7 +123,7 @@ async def help_command(ctx):
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
-        await ctx.send("❌ Comando não reconhecido. Use `.help` para ver os comandos disponíveis.")
+        await ctx.send("❌ Comando não reconhecido. Use `.help` para ver os possíveis comandos.")
     else:
         raise error  # mantém outros erros funcionando normalmente
 
